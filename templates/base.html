@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}" type='text/css'>
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-    <title>{% block title %}{{ _("Página inicial") }}{% endblock %} | {{ _("Wiki Loves Brasil") }}</title>
+    <title>{% block title %}{{ _("Página inicial") }}{% endblock %} | {{ _("WLM Suriname") }}</title>
     {% block styles %}{% endblock %}
 </head>
 <body>
@@ -19,11 +19,11 @@
         <div class="w3-container w3-quarter"></div>
         <h1 class="w3-container w3-half" style="text-align: center; padding-top:60px; padding-bottom:60px">
             {% if lang=="en" %}
-                <img class="banner" src="{{ url_for('static', filename= 'images/logo - en.svg') }}"
-                     alt='{{ _("Logotipo Wiki Loves Monuments Brasil") }}' width="100%"/>
+                <img class="banner" src="{{ url_for('static', filename= 'images/logo.svg') }}"
+                     alt='{{ _("Logotipo Wiki Loves Monuments Suriname") }}' width="100%"/>
             {% else %}
                 <img class="banner" src="{{ url_for('static', filename= 'images/logo.svg') }}"
-                     alt='{{ _("Logotipo Wiki Loves Monuments Brasil") }}' width="100%"/>
+                     alt='{{ _("Logotipo Wiki Loves Monuments Suriname") }}' width="100%"/>
             {% endif %}
         </h1>
     {% endblock %}

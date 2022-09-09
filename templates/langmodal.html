@@ -9,11 +9,10 @@
             </div>
             <div class="modal-body">
                 <ul style="line-height: 200%">
-                    {% for language in AVAILABLE_LANGUAGES %}
+                    {% for language_code, language_name in AVAILABLE_LANGUAGES.items() %}
                         <li>
-                            <a tabindex="0"
-                               href="{{ url_for('set_locale', return_to=request.script_root + request.full_path, lang=language) }}">
-                                {{ language|upper }}
+                            <a tabindex="0" href="{{ url_for('set_locale', return_to=request.script_root + request.full_path, lang=language_code) }}">
+                                {{ language_name }}
                             </a>
                         </li>
                     {% endfor %}

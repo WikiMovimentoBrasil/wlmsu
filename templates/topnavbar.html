@@ -13,12 +13,19 @@
 {#    {% if suggest %}#}
 {#        <a tabindex="0" id="sugerir" href="{{url_for('suggest', uf=uf)}}">{{_("Sugerir")}}</a>#}
 {#    {% endif %}#}
-    {% if lang != 'en' %}
-        <a class="right" tabindex="0" href="{{url_for('set_locale', return_to=request.script_root + request.full_path, lang='en')}}">EN</a>
-    {% endif %}
-    {% if lang != 'pt' and lang != 'pt-br' and lang != 'pt_BR' and lang != 'pt-BR' %}
-        <a class="right" tabindex="0" href="{{url_for('set_locale', return_to=request.script_root + request.full_path, lang='pt')}}">PT</a>
-    {% endif %}
+{#    <select class="right" onchange="location.href=this.value">#}
+{#        <option value="#" disabled selected>#}
+{#            {{ AVAILABLE_LANGUAGES.items()["{{ lang }}]}}#}
+{#        </option>#}
+{#        {% for lang_code, lang_name in AVAILABLE_LANGUAGES.items() %}#}
+{#            <option value="{{ url_for('set_locale', return_to=request.script_root + request.full_path, lang=lang_code) }}">#}
+{#                {{ lang_name }}#}
+{#            </option>#}
+{#        {% endfor %}#}
+{#    </select>#}
+    <a class="right" tabindex="0" onclick="$('#langModal').modal('show');" style="cursor: pointer">
+        <i class='fa-solid fa-language'></i> {{ _("Idioma") }}
+    </a>
     {% if username %}
         <a class="right" tabindex="0" target="_blank" href="https://commons.wikimedia.org/wiki/Special:Contributions/{{username}}">{{username}}</a>
     {% else %}

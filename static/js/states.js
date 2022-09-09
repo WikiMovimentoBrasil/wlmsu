@@ -5,17 +5,15 @@ const colorTriples = [
     ["#006400", "#004B23", "#FFFFFF"],
     ["#D90202", "#7C0606", "#FFFFFF"],
     ["#FFA200", "#FF5900", "#000000"],
-    ["#005A8A", "#03045E", "#FFFFFF"],
-    ["#6818A5", "#3A015C", "#FFFFFF"],
     ["#FFFFFF", "#000000", "#000000"]
 ]
 
-const regions = ["N", "NE", "CO", "SE", "S"]
+const regions = ["R", "E", "W"]
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // MAP LAYER
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-let map = L.map('map', {zoomControl: false}).setMaxBounds([[6.3, -75.1], [-34.8, -27.8]]).setView([-19.5, -54.4], 4);
+let map = L.map('map', {zoomControl: false}).setMaxBounds([[0.52, -59.46], [7.52, -52.46]]).setView([4.02, -55.96], 8);
 
 // OpenStreetMap
 let osm_map = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -116,9 +114,7 @@ function getFillColor(d) {
     return d === regions[0] ? colorTriples[0][0] :
         d === regions[1] ? colorTriples[1][0] :
             d === regions[2] ? colorTriples[2][0] :
-                d === regions[3] ? colorTriples[3][0] :
-                    d === regions[4] ? colorTriples[4][0] :
-                        colorTriples[5][0];
+                colorTriples[3][0];
 }
 
 // This code defines the bordr color of each state based on its region
@@ -126,9 +122,7 @@ function getBorderColor(d) {
     return d === regions[0] ? colorTriples[0][1] :
         d === regions[1] ? colorTriples[1][1] :
             d === regions[2] ? colorTriples[2][1] :
-                d === regions[3] ? colorTriples[3][1] :
-                    d === regions[4] ? colorTriples[4][1] :
-                        colorTriples[5][1];
+                        colorTriples[3][1];
 }
 
 // This code defines the font color of each state based on its region
@@ -136,9 +130,7 @@ function getFontColor(d) {
     return d === regions[0] ? colorTriples[0][2] :
         d === regions[1] ? colorTriples[1][2] :
             d === regions[2] ? colorTriples[2][2] :
-                d === regions[3] ? colorTriples[3][2] :
-                    d === regions[4] ? colorTriples[4][2] :
-                        colorTriples[5][2];
+                        colorTriples[3][2];
 }
 
 // This code defines the style of each state on load

@@ -9,14 +9,14 @@
             </div>
             <div class="modal-body">
                 <p>{{ _("Olá, gostaríamos de te dar as boas-vindas!") }}</p>
-                <p>{{ _("O <b>Wiki Loves Brasil</b> é um aplicativo de envio de imagens para a etapa nacional do maior concurso fotográfico do mundo, o <b><i>Wiki Loves Monuments</i></b>!") }}</p>
-                <p>{{ _("Envie suas fotografias do patrimônio histórico brasileiro durante o mês de setembro para participar e concorrer a prêmios.") }}</p>
+                <p>{{ _("O <b>Wiki Loves Monuments Suriname</b> é um aplicativo de envio de imagens para a etapa nacional do maior concurso fotográfico do mundo, o <b><i>Wiki Loves Monuments</i></b>!") }}</p>
+                <p>{{ _("Envie suas fotografias do patrimônio histórico surinamês durante o mês de setembro para participar e concorrer a prêmios.") }}</p>
                 <hr>
                 <p>{{ _("Comece selecionando uma subdivisão no mapa para ver os monumentos da região.") }}</p>
                 <hr>
                 <p>
                     <img src="{{ url_for('static', filename='/images/logowikipedia.png') }}" width="25px" alt="{{ _('Logo da Wikipédia') }}">
-                    <a target="_blank" href="{{ _('https://pt.wikipedia.org/wiki/Wikipédia:Wiki_Loves_Monuments/Brasil') }}">
+                    <a target="_blank" href="{{ _('https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2022_in_Suriname') }}">
                         {{ _("Visite a página do concurso na Wiki") }}
                     </a>
                 </p>
@@ -24,8 +24,10 @@
                 <p>
                     {% set projeto %}<a tabindex="0" target='_blank' aria-label='{{ _("Wiki Movimento Brasil") }}' href='https://meta.wikimedia.org/wiki/Wiki_Movement_Brazil_User_Group/{{ lang }}'>{{ _("Grupo de usuários Wiki Movimento Brasil") }}</a>{% endset %}
                     {% set developer %}<a target='_blank' href='mailto:eder.porto@wmnobrasil.org'><i>{{ _("eder.porto@wmnobrasil.org") }}</i></a>{% endset %}
+                    {% set developer2 %}<a target='_blank' href='mailto:info.sges1997@gmail.com'><i>{{ _("info.sges1997@gmail.com") }}</i></a>{% endset %}
+                    {% set developer3 %}<a target='_blank' href='mailto:bheritagesur@gmail.com'><i>{{ _("bheritagesur@gmail.com") }}</i></a>{% endset %}
                     {{ _("<i>Wiki Loves Brasil</i> é um aplicativo desenvolvido pelo <i><b>%(projeto)s</b></i>.", projeto=projeto) }}<br><br>
-                    {{ _("Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para %(developer)s.", developer=developer) }}
+                    {{ _("Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem para:<br>%(developer)s<br>%(developer2)s<br>%(developer3)s.", developer=developer, developer2=developer2, developer3=developer3) }}
                 </p>
             </div>
         </div>

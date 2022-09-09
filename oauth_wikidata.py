@@ -149,7 +149,7 @@ def upload_file(uploaded_file, form, text):
         "format": "json",
         "token": token,
         "text": text,
-        "comment": "Uploaded with Wiki Loves Brasil"
+        "comment": "Uploaded with Wiki Loves Monuments Suriname"
     }
 
     media_file = {'file': (form["filename"], uploaded_file.read(), 'multipart/form-data')}
@@ -167,16 +167,18 @@ def build_text(form):
     result = query_wikidata("SELECT DISTINCT ?item ?itemDescription ?name ?local ?localLabel "
                             "?local_cat ?estado ?estadoLabel (LANG(?itemDescription) AS ?lang) "
                             "WHERE { "
-                            "BIND(wd:" + qid + " AS ?item) "
+                            "BIND(wd:Q113617275 AS ?item) "
                             "OPTIONAL { [] schema:about ?item; "
                             "schema:isPartOf <https://commons.wikimedia.org/>; "
                             "schema:name ?name. } "
-                            "{ ?item p:P131/ps:P131 ?local. } UNION { ?item p:P131/ps:P131 [wdt:P131 ?local]. } "
-                            "{ ?local wdt:P31 wd:Q3184121 } UNION { ?local wdt:P31 wd:Q515 } "
+                            "{ ?item p:P131/ps:P131 [wdt:P131 ?local]. "
                             "?local wdt:P131 ?estado. "
-                            "?estado wdt:P31 wd:Q485258. "
+                            "?estado wdt:P31 wd:Q1649296 } "
+                            "UNION  { ?item p:P131/ps:P131 ?local. "
+                            "BIND(?local AS ?estado). "
+                            "?estado wdt:P31 wd:Q1649296 } "
                             "OPTIONAL { ?local wdt:P373 ?local_cat. } "
-                            "SERVICE wikibase:label { bd:serviceParam wikibase:language 'pt-br,pt,en'. }}")
+                            "SERVICE wikibase:label { bd:serviceParam wikibase:language 'nl,en'. }}")
 
     lang = ""
     descr = ""
@@ -185,7 +187,7 @@ def build_text(form):
 
     category_local = ""
     category_monument = ""
-    category_tool = "Uploaded via WikiLovesBrasil|" + qid
+    category_tool = "Uploaded via WLMSU|" + qid
 
     local_ = ""
     state_ = ""
@@ -206,12 +208,12 @@ def build_text(form):
     elif state_ in contest_cats["estados"]:
         category_wlm = contest_cats["estados"][state_]
     else:
-        category_wlm = "Images from Wiki Loves Monuments " + year + " in Brazil without proper category"
+        category_wlm = "Images from Wiki Loves Monuments " + year + " in Suriname without proper category"
 
     if category_monument:
         category_local = ""
 
-    category_image_type = "Images from Wiki Loves Monuments " + year + " in Brazil declared to fit " + form["image_type"] + " Wikidata property"
+    category_image_type = "Images from Wiki Loves Monuments " + year + " in Suriname declared to fit " + form["image_type"] + " Wikidata property"
     categories = list(filter(None, [category_monument, category_local, category_wlm, category_tool, category_image_type]))
 
     coordinates = "{{Location|" + form["coordinates"] + "}}\n" if form["coordinates"] else ""
@@ -226,7 +228,7 @@ def build_text(form):
             coordinates +
             "\n\n" +
             "=={{int:license-header}}==\n" +
-            "{{self|cc-by-sa-4.0}}\n{{Wiki Loves Monuments " + year + "|br}}\n\n" +
+            "{{self|cc-by-sa-4.0}}\n{{Wiki Loves Monuments " + year + "|su}}\n\n" +
             "[[Category:" + "]]\n[[Category:".join(categories) + "]]\n"
             )
     return text
