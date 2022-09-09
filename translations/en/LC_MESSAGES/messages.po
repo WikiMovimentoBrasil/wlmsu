@@ -6,7 +6,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: eder.porto@wmnobrasil.org\n"
 "POT-Creation-Date: 2022-08-30 04:38-0300\n"
 "PO-Revision-Date: 2022-05-26 04:58-0300\n"
@@ -25,12 +25,13 @@ msgid "Sobre"
 msgstr "About"
 
 #: templates/aboutmodal.html:12 templates/sobre.html:30
+#, fuzzy
 msgid ""
 "Você está pronto(a) para participar do maior concurso fotográfico do "
 "mundo?! O aplicativo <b>Wiki Loves Brasil</b> te oferece diversas formas "
-"de participar: Enviando suas fotografias dos monumentos brasileiros de "
-"maneira simplificada, geolocalizar monumentos ainda sem coordenadas "
-"registradas e sugerir monumentos que por acaso não estejam nas listas."
+"de participar: Enviando suas fotografias dos monumentos surinameses de "
+"maneira simplificada, geolocalizando monumentos ainda sem coordenadas "
+"registradas e sugerindo monumentos que por acaso não estejam nas listas."
 msgstr ""
 "Are you ready to participate in the biggest photo contest in the world?! "
 "The <b>Wiki Loves Brazil</b> app offers you several ways to participate: "
@@ -230,12 +231,14 @@ msgid "Adicionar coordenadas"
 msgstr "Add coordinates"
 
 #: templates/geolocate.html:104
+#, fuzzy
 msgid ""
-"Adicione coordenadas clicando em <i class=\"fa-solid fa-map-pin\"></i> e posicionando o marcador no "
+"Adicione coordenadas clicando em <i class=\"fa-solid\n"
+"                        fa-map-pin\"></i> e posicionando o marcador no "
 "mapa ou manualmente no campo abaixo."
 msgstr ""
-"Add coordinates by clicking <i class=\"fa-solid fa-map-pin\"></i> and placing the marker on the "
-"map or manually in the field below."
+"Add coordinates by clicking <i class=\"fa-solid fa-map-pin\"></i> and "
+"placing the marker on the map or manually in the field below."
 
 #: templates/geolocate.html:109
 msgid "Coordenadas"
@@ -538,10 +541,11 @@ msgid "Enviar imagem(ns)"
 msgstr "Send image(s)"
 
 #: templates/item.html:580
+#, fuzzy
 msgid ""
 "Ocorreu algum erro! Verifique que fez login e revise o formulário. Caso o"
 " erro persista, por favor, reporte em "
-"https://github.com/WikiMovimentoBrasil/wikilovesbrasil/issues"
+"https://github.com/WikiMovimentoBrasil/wlmsu/issues"
 msgstr ""
 "An error has occurred! Verify that you are logged in and review the form."
 " If error persists, please report it to "
@@ -590,22 +594,23 @@ msgid ""
 " Monuments</i></b>!"
 msgstr ""
 "The <b>Wiki Loves Brasil</b> is an application for uploading images to "
-"the national phase of the biggest photo contest in the world, the <b><i>Wiki Loves"
-"Monuments</i></b>!"
+"the national phase of the biggest photo contest in the world, the "
+"<b><i>Wiki LovesMonuments</i></b>!"
 
 #: templates/map.html:59 templates/map_uf.html:41
 msgid ""
 "Envie suas fotografias do patrimônio histórico brasileiro durante o mês "
 "de setembro para participar e concorrer a prêmios."
 msgstr ""
-"Submit your photographs of the Brazilian historical heritage during the month "
-"of September to participate and compete for prizes."
+"Submit your photographs of the Brazilian historical heritage during the "
+"month of September to participate and compete for prizes."
 
 #: templates/map.html:61 templates/map_uf.html:43
 msgid ""
 "Comece selecionando uma subdivisão no mapa para ver os monumentos da "
 "região."
-msgstr "Start by selecting a subdivision on the map to see the monuments of the "
+msgstr ""
+"Start by selecting a subdivision on the map to see the monuments of the "
 "region."
 
 #: templates/map.html:63 templates/map_uf.html:45
@@ -725,10 +730,14 @@ msgid "Sugira monumentos"
 msgstr "Suggest monuments"
 
 #: templates/suggest.html:43
-msgid "Utilize o formulário abaixo para sugerir monumentos que não "
-"estejam nos mapas ou nas listas do Wiki Loves Monuments Brasil."
-msgstr "Use the form below to suggest monuments that "
-"are not on the Loves Monuments Brasil Wiki maps or lists."
+#, fuzzy
+msgid ""
+"Utilize o formulário abaixo para sugerir monumentos que não estejam nos "
+"mapas ou nas\n"
+"                listas do Wiki Loves Monuments Brasil."
+msgstr ""
+"Use the form below to suggest monuments that are not on the Loves "
+"Monuments Brasil Wiki maps or lists."
 
 #: templates/suggest.html:48
 msgid "Qual o nome do monumento? <sup style=\"color:#990000\">*</sup>"
@@ -917,3 +926,4 @@ msgstr "Send suggestion"
 #: templates/topnavbar.html:2
 msgid "Mapa Geral"
 msgstr "General Map"
+

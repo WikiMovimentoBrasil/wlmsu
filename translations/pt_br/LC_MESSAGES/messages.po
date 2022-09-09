@@ -5,11 +5,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: eder.porto@wmnobrasil.org\n"
 "POT-Creation-Date: 2022-08-30 04:38-0300\n"
 "PO-Revision-Date: 2022-08-28 02:21-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Éder Porto Ferreira Alves <eder.porto@wmnobrasil.org>\n"
 "Language: pt_BR\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -27,15 +27,14 @@ msgstr ""
 msgid ""
 "Você está pronto(a) para participar do maior concurso fotográfico do "
 "mundo?! O aplicativo <b>Wiki Loves Brasil</b> te oferece diversas formas "
-"de participar: Enviando suas fotografias dos monumentos brasileiros de "
-"maneira simplificada, geolocalizar monumentos ainda sem coordenadas "
-"registradas e sugerir monumentos que por acaso não estejam nas listas."
+"de participar: Enviando suas fotografias dos monumentos surinameses de "
+"maneira simplificada, geolocalizando monumentos ainda sem coordenadas "
+"registradas e sugerindo monumentos que por acaso não estejam nas listas."
 msgstr ""
 
 #: templates/aboutmodal.html:13 templates/sobre.html:31
-msgid ""
-"O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A etapa "
-"nacional ocorre entre 1º e 30 de setembro de 2022."
+msgid "O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A "
+"etapa nacional ocorre entre 1º e 30 de setembro de 2022."
 msgstr ""
 
 #: templates/aboutmodal.html:14 templates/sobre.html:32
@@ -504,7 +503,7 @@ msgstr ""
 msgid ""
 "Ocorreu algum erro! Verifique que fez login e revise o formulário. Caso o"
 " erro persista, por favor, reporte em "
-"https://github.com/WikiMovimentoBrasil/wikilovesbrasil/issues"
+"https://github.com/WikiMovimentoBrasil/wlmsu/issues"
 msgstr ""
 
 #: templates/langmodal.html:5
@@ -868,67 +867,3 @@ msgstr ""
 #: templates/topnavbar.html:2
 msgid "Mapa Geral"
 msgstr ""
-
-#~ msgid " e %(number_subcats)s subcategorias"
-#~ msgstr ""
-
-#~ msgid "Nenhuma categoria no Wikimedia Commons"
-#~ msgstr ""
-
-#~ msgid "1 artigo"
-#~ msgstr ""
-
-#~ msgid "%(number)s artigo(s) em diferentes idiomas"
-#~ msgstr ""
-
-#~ msgid "Nenhum artigo na Wikipédia"
-#~ msgstr ""
-
-#~ msgid "Sem website oficial"
-#~ msgstr ""
-
-#~ msgid "para participar do Wiki Loves Monuments Brasil"
-#~ msgstr ""
-
-#~ msgid "Veja artigos em outros idiomas"
-#~ msgstr ""
-
-#~ msgid "Selecione um dos estados brasileiros no mapa"
-#~ msgstr ""
-
-#~ msgid "Seleção de estado"
-#~ msgstr ""
-
-#~ msgid "Veja monumentos no mapa"
-#~ msgstr ""
-
-#~ msgid "Sugira monumentos faltantes"
-#~ msgstr ""
-
-#~ msgid "Possui imagem:"
-#~ msgstr ""
-
-#~ msgid "Indiferente"
-#~ msgstr ""
-
-#~ msgid "Sim"
-#~ msgstr ""
-
-#~ msgid "Não"
-#~ msgstr ""
-
-#~ msgid "Todos"
-#~ msgstr ""
-
-#~ msgid "Agrupar:"
-#~ msgstr ""
-
-#~ msgid "Mapa geral"
-#~ msgstr ""
-
-#~ msgid "Geolocalizar"
-#~ msgstr ""
-
-#~ msgid "Sugerir"
-#~ msgstr ""
-
