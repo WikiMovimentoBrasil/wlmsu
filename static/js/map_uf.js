@@ -448,10 +448,10 @@ $('#filter').on('click', function (event) {
         });
     }
 
-    let layerBounds = layer_to_preserve.getBounds();
-            if (layerBounds.isValid()) {
-                map.fitBounds(layerBounds, {padding: [20, 20]});
-            }
+    // let layerBounds = layer_to_preserve.getBounds();
+    //         if (layerBounds.isValid()) {
+    //             map.fitBounds(layerBounds, {padding: [20, 20]});
+    //         }
 
     has_image_filtered = has_image;
     types_filtered = types;
