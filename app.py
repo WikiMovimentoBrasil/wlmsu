@@ -409,11 +409,8 @@ def mapa_uf(uf):
 def geolocate(uf):
     username = get_username()
     lang = get_locale()
-    states_qids = {"ac": "Q40780", "al": "Q40885", "am": "Q40040", "ap": "Q40130", "ba": "Q40430", "ce": "Q40123",
-                   "df": "Q119158", "es": "Q43233", "go": "Q41587", "ma": "Q42362", "mg": "Q39109", "ms": "Q43319",
-                   "mt": "Q42824", "pa": "Q39517", "pb": "Q38088", "pe": "Q40942", "pi": "Q42722", "pr": "Q15499",
-                   "rj": "Q41428", "rn": "Q43255", "ro": "Q43235", "rr": "Q42508", "rs": "Q40030", "sc": "Q41115",
-                   "se": "Q43783", "sp": "Q175", "to": "Q43695"}
+    states_qids = {"br": "Q847680", "cm": "Q952510", "cr": "Q1130141", "ma": "Q1140897", "ni": "Q1147515",
+                   "pr": "Q1140891", "pm": "Q1130134", "sa": "Q1351157", "si": "Q1130138", "wa": "Q1147524"}
 
     monuments, locais = query_monuments_without_coords(states_qids[uf.lower()], lang)
 
