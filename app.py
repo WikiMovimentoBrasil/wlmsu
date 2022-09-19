@@ -92,7 +92,7 @@ def oauth_callback():
 def get_locale():
     if request.args.get('lang'):
         session['lang'] = request.args.get('lang')
-    return session.get('lang', 'pt')
+    return session.get('lang', 'nl')
 
 
 # Função para mudar a língua de exibição do conteúdo
