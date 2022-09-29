@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: eder.porto@wmnobrasil.org\n"
-"POT-Creation-Date: 2022-09-18 23:41-0300\n"
+"POT-Creation-Date: 2022-09-29 03:25-0300\n"
 "PO-Revision-Date: 2022-05-26 04:58-0300\n"
 "Last-Translator: Éder Porto <eder.porto@wmnobrasil.org>\n"
 "Language: en\n"
@@ -18,6 +18,141 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
+
+#: app.py:386
+msgid "Ver mais informações e enviar fotografias"
+msgstr "See more information and send photos"
+
+#: app.py:447
+#, python-format
+msgid ""
+"Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com"
+" sucesso!"
+msgstr "Your suggestion to add %(val)s to the monument list has been successfully sent!"
+
+#: app.py:509
+msgid "Coordenadas inseridas com sucesso!"
+msgstr "Coordinates entered successfully!"
+
+#: app.py:509
+msgid ""
+"Algo deu errado, atualize esta página e tente novamente. Caso o erro "
+"persista, entre em contato na seção \\\"Sobre\\\"."
+msgstr "Something went wrong, please refresh this page and try again. "
+"If the error persists, please contact us in the \\\"About\\\" section."
+
+#: app.py:544 app.py:553
+msgid "Uma imagem com este exato título já existe. Por favor, reformule o título."
+msgstr "An image with this exact title already exists. Please rephrase the title."
+
+#: app.py:546
+#, python-format
+msgid ""
+"Esta imagem é uma duplicata exata da imagem "
+"https://commons.wikimedia.org/wiki/File:%(file_)s"
+msgstr "This image is an exact duplicate of the image "
+"https://commons.wikimedia.org/wiki/File:%(file_)s"
+
+#: app.py:549
+msgid ""
+"Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da"
+" base."
+msgstr "This image is an exact duplicate of another image that was deleted from the base."
+
+#: app.py:551
+msgid ""
+"Uma outra imagem costumava utilizar este mesmo título. Por favor, "
+"reformule o título."
+msgstr "Another image used to use this same title. Please rewrite it"
+
+#: app.py:556 app.py:561
+msgid ""
+"Imagem enviada com sucesso! Verifique suas contribuições clicando em seu "
+"nome de usuário(a)."
+msgstr "Image sent successfully! Check your contributions by clicking on your username."
+
+#: app.py:564
+msgid "Error."
+msgstr "Error."
+
+#: app.py:566
+msgid ""
+"Ocorreu algum erro! Verifique o formulário e tente novamente. Caso o erro"
+" persista, por favor, reporte em "
+"https://github.com/WikiMovimentoBrasil/wlmsu/issues"
+msgstr ""
+"An error has occurred! Verify that you are logged in and review the form."
+" If error persists, please report it to "
+"https://github.com/WikiMovimentoBrasil/wikilovesbrasil/issues"
+
+#: wikidata.py:326
+
+msgid "Sem imagens"
+msgstr "No images"
+
+#: wikidata.py:329
+msgid "Rótulo"
+msgstr "Label"
+
+#: wikidata.py:330
+msgid "Designação do patrimônio"
+msgstr "Heritage designation"
+
+#: wikidata.py:331
+msgid "Endereço"
+msgstr "Address"
+
+#: wikidata.py:332
+msgid "Latitude"
+msgstr "Latitude"
+
+#: wikidata.py:333
+msgid "Longitude"
+msgstr "Longitude"
+
+#: wikidata.py:334
+msgid "Imagem (P18)"
+msgstr "Image (P18)"
+
+#: wikidata.py:335
+msgid "Imagem da planta (P3311)"
+msgstr "Image of design plans (P3311)"
+
+#: wikidata.py:336
+msgid "Visão panorâmica (P4291)"
+msgstr "Panoramic view (P4291)"
+
+#: wikidata.py:337
+msgid "Vista (P8517)"
+msgstr "View (P8517)"
+
+#: wikidata.py:338
+msgid "Placa com o nome do lugar (P1766)"
+msgstr "Plaque with the name of the place (P1766)"
+
+#: wikidata.py:339
+msgid "Imagem de placa comemorativa (P1801)"
+msgstr "Commemorative plaque image (P1801)"
+
+#: wikidata.py:340
+msgid "Imagem noturna (P3451)"
+msgstr "Nighttime view (P3451)"
+
+#: wikidata.py:341
+msgid "Imagem do interior (P5775)"
+msgstr "Image of the interior (P5775)"
+
+#: wikidata.py:342
+msgid "Vista aérea (P8592)"
+msgstr "Aerial view (P8592)"
+
+#: wikidata.py:343
+msgid "Imagem da entrada (P9721)"
+msgstr "Image of the entrance (P9721)"
+
+#: wikidata.py:344
+msgid "Imagem da inscrição (P9906)"
+msgstr "Image of inscriptions (P9906)"
 
 #: templates/aboutmodal.html:5 templates/sobre.html:9
 #: templates/topnavbar.html:3
@@ -34,29 +169,31 @@ msgstr "Wiki Movement Brazil User Group"
 
 #: templates/aboutmodal.html:13 templates/presentationmodal.html:26
 msgid "eder.porto@wmnobrasil.org"
-msgstr ""
+msgstr "eder.porto@wmnobrasil.org"
 
 #: templates/aboutmodal.html:14 templates/presentationmodal.html:27
 msgid "info.sges1997@gmail.com"
-msgstr ""
+msgstr "info.sges1997@gmail.com"
 
 #: templates/aboutmodal.html:15 templates/presentationmodal.html:28
 msgid "bheritagesur@gmail.com"
-msgstr ""
+msgstr "bheritagesur@gmail.com"
 
-#: templates/aboutmodal.html:16
+#: templates/aboutmodal.html:16 templates/presentationmodal.html:29
 #, python-format
 msgid ""
 "<i>Wiki Loves Suriname</i> é um aplicativo desenvolvido pelo "
 "<i><b>%(projeto)s</b></i>."
-msgstr ""
+msgstr "<i>Wiki Loves Suriname</i> is an application developed by "
+"<i><b>%(projeto)s</b></i>."
 
 #: templates/aboutmodal.html:17 templates/presentationmodal.html:30
 #, python-format
 msgid ""
 "Dúvidas, reclamações, sugestões ou elogios: Envie uma mensagem "
 "para:<br>%(developer)s<br>%(developer2)s<br>%(developer3)s."
-msgstr ""
+msgstr "Questions, complaints, suggestions or compliments: Send a "
+"message to:<br>%(developer)s<br>%(developer2)s<br>%(developer3)s."
 
 #: templates/aboutmodal.html:21 templates/sobre.html:47
 msgid "Flask"
@@ -102,7 +239,7 @@ msgstr ""
 #: templates/aboutmodal.html:31 templates/sobre.html:57
 #, python-format
 msgid "Este aplicativo é um <i>fork</i> do %(reference2)s."
-msgstr ""
+msgstr "This app is a <i>fork</i> of %(reference2)s."
 
 #: templates/aboutmodal.html:32 templates/sobre.html:58
 #, python-format
@@ -144,13 +281,12 @@ msgstr "Homepage"
 
 #: templates/base.html:12 templates/map_uf.html:16
 msgid "WLM Suriname"
-msgstr ""
+msgstr "WLM Suriname"
 
 #: templates/base.html:23 templates/base.html:26 templates/error.html:18
 #: templates/error.html:21 templates/sobre.html:28 templates/sobre.html:31
-#, fuzzy
 msgid "Logotipo Wiki Loves Monuments Suriname"
-msgstr "Wiki Loves Brazil logo"
+msgstr "Wiki Loves Monuments Suriname logo"
 
 #: templates/error.html:9 templates/error.html:30
 msgid "Algo deu errado!"
@@ -223,7 +359,6 @@ msgid "Adicionar coordenadas"
 msgstr "Add coordinates"
 
 #: templates/geolocate.html:105
-#, fuzzy
 msgid ""
 "Adicione coordenadas clicando em <i class=\"fa-solid\n"
 "                        fa-map-pin\"></i> e posicionando o marcador no "
@@ -253,9 +388,8 @@ msgid "1 e 30 de setembro"
 msgstr "Setember 1 and 30"
 
 #: templates/item.html:33
-#, fuzzy
 msgid "para participar do Wiki Loves Monuments Suriname."
-msgstr "to participate in Wiki Loves Monuments Brasil"
+msgstr "to participate in Wiki Loves Monuments Suriname"
 
 #: templates/item.html:40
 msgid "Arraste e solte seus arquivos ou clique para selecioná-los"
@@ -279,9 +413,8 @@ msgid "%(number_images)s imagens"
 msgstr "%(number_images)s images"
 
 #: templates/item.html:87
-#, fuzzy
 msgid "Única imagem"
-msgstr "Send image(s)"
+msgstr "Only one image"
 
 #: templates/item.html:95
 msgid "Artigo na Wikipédia"
@@ -312,28 +445,24 @@ msgid "Vista do interior de um edifício ou espaço fechado"
 msgstr "View from inside a building or enclosed space"
 
 #: templates/item.html:150 templates/item.html:375 templates/map_uf.html:56
-#, fuzzy
 msgid "Imagem do interior do monumento"
-msgstr "Image of inscriptions on the monument"
+msgstr "Image of the interior of the monument"
 
 #: templates/item.html:157
-#, fuzzy
 msgid "Vista da entrada de um edifício ou espaço fechado, vista do lado"
 msgstr ""
 "View of the entrance to a building or enclosed space, viewed from the "
 "outside"
 
 #: templates/item.html:159
-#, fuzzy
 msgid "Imagem da entrada vista de fora "
-msgstr "Entrance image"
+msgstr "Image of the entrance viewed from the outside"
 
 #: templates/item.html:164 templates/item.html:377 templates/map_uf.html:58
 msgid "Imagem de inscrições no monumento"
 msgstr "Image of inscriptions on the monument"
 
 #: templates/item.html:166 templates/item.html:377 templates/map_uf.html:58
-#, fuzzy
 msgid "Imagem de inscrição no monumento"
 msgstr "Image of inscriptions on the monument"
 
@@ -343,7 +472,7 @@ msgstr "Monument at dusk or at night"
 
 #: templates/item.html:175 templates/item.html:381 templates/map_uf.html:62
 msgid "Vista noturna ou ao entardecer"
-msgstr ""
+msgstr "Night or twilight view"
 
 #: templates/item.html:180 templates/item.html:380 templates/map_uf.html:61
 msgid "Fotografia de um monumento tirada do ar, por um drone, por exemplo"
@@ -358,23 +487,20 @@ msgid "Imagem de placa de inauguração ou inscrição mencionando o monumento"
 msgstr "Image of inauguration plaque or inscription mentioning the monument"
 
 #: templates/item.html:191 templates/item.html:378 templates/map_uf.html:59
-#, fuzzy
 msgid "Placa comemorativa ou de inauguração"
-msgstr "Commemorative plaque"
+msgstr "Commemorative plaque or innauguration plaque"
 
 #: templates/item.html:196 templates/item.html:379 templates/map_uf.html:60
 msgid "Imagem de placa de trânsito com nome de local"
 msgstr "Image of road sign with place name"
 
 #: templates/item.html:198 templates/item.html:379 templates/map_uf.html:60
-#, fuzzy
 msgid "Placa de trânsito com o nome do monumento"
-msgstr "Image of road sign with place name"
+msgstr "Image of road sign with the name of the monument"
 
 #: templates/item.html:205 templates/item.html:383 templates/map_uf.html:64
-#, fuzzy
 msgid "Imagem que o observador vê estando no monumento"
-msgstr "Image of inscriptions on the monument"
+msgstr "Image that the observer see being on the monument"
 
 #: templates/item.html:207 templates/item.html:383 templates/map_uf.html:64
 msgid "Vista a partir do monumento"
@@ -385,18 +511,16 @@ msgid "Ampla vista geral que contém o monumento"
 msgstr "Wide overview that contains the monument"
 
 #: templates/item.html:214 templates/item.html:382 templates/map_uf.html:63
-#, fuzzy
 msgid "Imagem panorâmica do monumento"
-msgstr "Enter the name of the monument"
+msgstr "Panoramic image of the monument"
 
 #: templates/item.html:221 templates/item.html:384 templates/map_uf.html:65
 msgid "Imagem representando a planta de um edifício ou local"
 msgstr "Image representing the floor plan of a building or site"
 
 #: templates/item.html:223 templates/item.html:384 templates/map_uf.html:65
-#, fuzzy
 msgid "Imagem da planta de um edifício"
-msgstr "Image representing the floor plan of a building or site"
+msgstr "Image of the design plans of a building"
 
 #: templates/item.html:238
 msgid "Wikipédia"
@@ -420,7 +544,7 @@ msgstr "Remove"
 
 #: templates/item.html:353
 msgid "Enviando"
-msgstr ""
+msgstr "Sending"
 
 #: templates/item.html:358
 msgid "Título: "
@@ -457,14 +581,12 @@ msgstr ""
 "outside"
 
 #: templates/item.html:376 templates/map_uf.html:57
-#, fuzzy
 msgid "Imagem da entrada vista de fora"
-msgstr "Entrance image"
+msgstr "Image of the entrance viewed from the outside"
 
 #: templates/item.html:380 templates/map_uf.html:61
-#, fuzzy
 msgid "Vista aérea do monumento"
-msgstr "View from the monument"
+msgstr "Aerial view from the monument"
 
 #: templates/item.html:556
 #, python-format
@@ -490,7 +612,6 @@ msgid "Enviar imagem(ns)"
 msgstr "Send image(s)"
 
 #: templates/item.html:573
-#, fuzzy
 msgid ""
 "Ocorreu algum erro! Verifique que fez login e revise o formulário. Caso o"
 " erro persista, por favor, reporte em "
@@ -502,7 +623,7 @@ msgstr ""
 
 #: templates/item.html:600
 msgid "Arquivo enviado"
-msgstr ""
+msgstr "File sent"
 
 #: templates/langmodal.html:5
 msgid "Selecione um idioma"
@@ -534,7 +655,7 @@ msgstr "Select a state"
 
 #: templates/map.html:36
 msgid "Suriname"
-msgstr ""
+msgstr "Suriname"
 
 #: templates/map_uf.html:33 templates/map_uf.html:73 templates/map_uf.html:110
 msgid "Filtrar"
@@ -565,12 +686,10 @@ msgid "Todos os tipos"
 msgstr "All types"
 
 #: templates/map_uf.html:98
-#, fuzzy
 msgid "Filtrar os monumentos"
 msgstr "Filter the monuments"
 
 #: templates/map_uf.html:99
-#, fuzzy
 msgid "Selecionar os monumentos"
 msgstr "Select the monuments"
 
@@ -591,12 +710,10 @@ msgid "Agrupar monumentos"
 msgstr "Group monuments"
 
 #: templates/map_uf.html:106
-#, fuzzy
 msgid "Adicionar coordenadas a monumentos"
 msgstr "Add coordinates to monuments"
 
 #: templates/map_uf.html:107
-#, fuzzy
 msgid "Sugerir monumentos para o mapa"
 msgstr "Sugest monuments for the map"
 
@@ -633,7 +750,6 @@ msgid "Nenhum tipo"
 msgstr "No type"
 
 #: templates/map_uf.html:125
-#, fuzzy
 msgid "Selecione um monumento"
 msgstr "Select the monuments"
 
@@ -646,23 +762,21 @@ msgid "Olá, gostaríamos de te dar as boas-vindas!"
 msgstr "Hello, we would like to welcome you!"
 
 #: templates/presentationmodal.html:12
-#, fuzzy
 msgid ""
 "O <b>Wiki Loves Monuments Suriname</b> é um aplicativo de envio de "
 "imagens para a etapa nacional do maior concurso fotográfico do mundo, o "
 "<b><i>Wiki Loves Monuments</i></b>!"
 msgstr ""
-"The <b>Wiki Loves Brasil</b> is an application for uploading images to "
+"The <b>Wiki Loves Suriname</b> is an application for uploading images to "
 "the national phase of the biggest photo contest in the world, the "
-"<b><i>Wiki LovesMonuments</i></b>!"
+"<b><i>Wiki Loves Monuments</i></b>!"
 
 #: templates/presentationmodal.html:13
-#, fuzzy
 msgid ""
 "Envie suas fotografias do patrimônio histórico surinamês durante o mês de"
 " setembro para participar e concorrer a prêmios."
 msgstr ""
-"Submit your photographs of the Brazilian historical heritage during the "
+"Submit your photographs of the Surinamese historical heritage during the "
 "month of September to participate and compete for prizes."
 
 #: templates/presentationmodal.html:15
@@ -674,28 +788,18 @@ msgstr ""
 "region."
 
 #: templates/presentationmodal.html:18
-#, fuzzy
 msgid "Logo da Wikipédia"
-msgstr "Article in Wikipedia"
+msgstr "Wikipedia logo"
 
 #: templates/presentationmodal.html:19
-#, fuzzy
 msgid "https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2022_in_Suriname"
-msgstr "https://pt.wikipedia.org/wiki/Wikipédia:Wiki_Loves_Monuments/Brasil"
+msgstr "https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2022_in_Suriname"
 
 #: templates/presentationmodal.html:20
 msgid "Visite a página do concurso na Wiki"
 msgstr "Visit the contest page on the Wiki"
 
-#: templates/presentationmodal.html:29
-#, python-format
-msgid ""
-"<i>Wiki Loves Suriname</i> é um aplicativo desenvolvido pelo "
-"<i><b>%(projeto)s</b></i>."
-msgstr ""
-
 #: templates/sobre.html:41
-#, fuzzy
 msgid ""
 "Você está pronto(a) para participar do maior concurso fotográfico do "
 "mundo?! O aplicativo <b>Wiki Loves Monuments Suriname</b> te oferece "
@@ -705,8 +809,8 @@ msgid ""
 "nas listas."
 msgstr ""
 "Are you ready to participate in the biggest photo contest in the world?! "
-"The <b>Wiki Loves Brazil</b> app offers you several ways to participate: "
-"Sending your photographs of Brazilian monuments in a simplified way, "
+"The <b>Wiki Loves Suriname</b> app offers you several ways to participate: "
+"Sending your photographs of Surinamese monuments in a simplified way, "
 "geolocating monuments without registered coordinates and suggest "
 "monuments that happen not to be on the lists."
 
@@ -715,33 +819,31 @@ msgid ""
 "O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A etapa "
 "nacional ocorre entre 1º e 30 de setembro de 2022."
 msgstr ""
-"The Loves Monuments Wiki is the biggest photo contest in the world! The "
+"The Wiki Loves Monuments is the biggest photo contest in the world! The "
 "national stage takes place between September 1st and 30th, 2022."
 
 #: templates/sobre.html:43
-#, fuzzy
 msgid ""
 "Participe e concorra a prêmios. Mais detalhes na <a target='_blank' "
 "href='https://w.wiki/5ffp' title='Wiki Loves Monuments Suriname "
 "2022'>página do concurso no Wikimedia Commons</a>."
 msgstr ""
 "Join and compete for prizes. More details on the <a target='_blank' "
-"href='https://w.wiki/5Bkv' title='Wiki Loves Monuments Brasil "
-"2022'>Contest page on Wikipedia</a>."
+"href='https://w.wiki/5ffp' title='Wiki Loves Monuments Suriname "
+"2022'>Contest page on Wikimedia Commons</a>."
 
 #: templates/suggest.html:17
 msgid "Sugira monumentos"
 msgstr "Suggest monuments"
 
 #: templates/suggest.html:44
-#, fuzzy
 msgid ""
 "Utilize o formulário abaixo para sugerir monumentos que não estejam nos "
 "mapas ou nas\n"
 "                listas do Wiki Loves Monuments Suriname."
 msgstr ""
-"Use the form below to suggest monuments that are not on the Loves "
-"Monuments Brasil Wiki maps or lists."
+"Use the form below to suggest monuments that are not on the Wiki Loves "
+"Monuments Suriname maps or lists."
 
 #: templates/suggest.html:49
 msgid "Qual o nome do monumento? <sup style=\"color:#990000\">*</sup>"
@@ -752,55 +854,52 @@ msgid "Digite o nome do monumento"
 msgstr "Enter the name of the monument"
 
 #: templates/suggest.html:55
-#, fuzzy
 msgid "Em qual distrito está localizado? <sup style=\"color:#990000\">*</sup>"
-msgstr "In which state is it located? <sup style=\"color:#990000\">*</sup>"
+msgstr "In which district is it located? <sup style=\"color:#990000\">*</sup>"
 
 #: templates/suggest.html:57
-#, fuzzy
 msgid "Selecione um distrito"
-msgstr "Select a language"
+msgstr "Select a district"
 
 #: templates/suggest.html:58
 msgid "Brokopondo"
-msgstr ""
+msgstr "Brokopondo"
 
 #: templates/suggest.html:59
 msgid "Commewijne"
-msgstr ""
+msgstr "Commewijne"
 
 #: templates/suggest.html:60
 msgid "Coronie"
-msgstr ""
+msgstr "Coronie"
 
 #: templates/suggest.html:61
 msgid "Marowijne"
-msgstr ""
+msgstr "Marowijne"
 
 #: templates/suggest.html:62
 msgid "Nickerie"
-msgstr ""
+msgstr "Nickerie"
 
 #: templates/suggest.html:63
-#, fuzzy
 msgid "Para"
-msgstr "Paraná"
+msgstr "Para"
 
 #: templates/suggest.html:64
 msgid "Paramaribo"
-msgstr ""
+msgstr "Paramaribo"
 
 #: templates/suggest.html:65
 msgid "Saramacca"
-msgstr ""
+msgstr "Saramacca"
 
 #: templates/suggest.html:66
 msgid "Sipaliwini"
-msgstr ""
+msgstr "Sipaliwini"
 
 #: templates/suggest.html:67
 msgid "Wanica"
-msgstr ""
+msgstr "Wanica"
 
 #: templates/suggest.html:71
 msgid ""
@@ -823,7 +922,6 @@ msgid "Digite o endereço"
 msgstr "Enter the address"
 
 #: templates/suggest.html:82
-#, fuzzy
 msgid ""
 "Link para referência sobre o monumento: <sup "
 "style=\"color:#990000\">*</sup>"
@@ -849,203 +947,4 @@ msgstr "General Map"
 
 #: templates/topnavbar.html:27
 msgid "Idioma"
-msgstr ""
-
-#~ msgid ""
-#~ "No ano de 2021, o Brasil foi "
-#~ "o vencedor da etapa internacional, com"
-#~ " a imagem <a target='_blank' "
-#~ "href='https://commons.wikimedia.org/wiki/File:Real_Gabinete_Português_de_Leitura_10.jpg'"
-#~ " title='Real Gabinete Português de Leitura,"
-#~ " por Donatas Dabravolskas'>Real Gabinete "
-#~ "Português de Leitura</a>, por Donatas "
-#~ "Dabravolskas."
-#~ msgstr ""
-#~ "In 2021, Brazil was the winner of"
-#~ " the international phase, with the "
-#~ "image <a target='_blank' "
-#~ "href='https://commons.wikimedia.org/wiki/File:Real_Gabinete_Português_de_Leitura_10.jpg'"
-#~ " title='Real Portuguese Reading Cabinet, by"
-#~ " Donatas Dabravolskas'>Real Portuguese Reading"
-#~ " Cabinet</a>, by Donatas Dabravolskas."
-
-#~ msgid "Logotipo Wiki Loves Brasil"
-#~ msgstr "Wiki Loves Brasil logo"
-
-#~ msgid ""
-#~ "<i>Wiki Loves Brasil</i> é um aplicativo"
-#~ " desenvolvido pelo <i><b>%(projeto)s</b></i>, "
-#~ "visando melhorar a experiência dos "
-#~ "usuários que participam do concurso "
-#~ "fotográfico Wiki Loves Monuments na "
-#~ "localização e envio de fotografias para"
-#~ " o Wikimedia Commons."
-#~ msgstr ""
-#~ "<i>Wiki Loves Brazil</i> is an "
-#~ "application developed by <i><b>%(projeto)s</b></i>,"
-#~ " aiming to improve user experience of"
-#~ " who participate in the Wiki Loves"
-#~ " Monuments contest at finding and "
-#~ "uploading photographs to Wikimedia Commons."
-
-#~ msgid "Bem-vindo(a/e) ao<br><i>Wiki Loves Monuments Brasil 2022</i>"
-#~ msgstr "Welcome to <br><i>Wiki Loves Monuments Brazil 2022</i>"
-
-#~ msgid ""
-#~ "Neste aplicativo, você envia suas "
-#~ "fotografias do patrimônio histórico brasileiro"
-#~ " e participa do maior concurso "
-#~ "fotográfico do mundo!"
-#~ msgstr ""
-#~ "In this application, you send your "
-#~ "photographs of the Brazilian historical "
-#~ "heritage and participate in the biggest"
-#~ " photo contest in the world!"
-
-#~ msgid "Imagem do exterior"
-#~ msgstr "Illustrative image"
-
-#~ msgid "Imagem do interior"
-#~ msgstr "Interior image"
-
-#~ msgid "Imagem da inscrição"
-#~ msgstr "Inscription image"
-
-#~ msgid "Vista noturna"
-#~ msgstr "Night view"
-
-#~ msgid "Placa com o nome do lugar"
-#~ msgstr "Plaque with the name of the place"
-
-#~ msgid "Vista"
-#~ msgstr "View"
-
-#~ msgid "Vista panorâmica"
-#~ msgstr "Panoramic view"
-
-#~ msgid "Vista no inverno"
-#~ msgstr "Winter view"
-
-#~ msgid "Fotoesfera"
-#~ msgstr "Photosphere image"
-
-#~ msgid "Imagem da planta"
-#~ msgstr "Image of design plans"
-
-#~ msgid "Imagem do túmulo"
-#~ msgstr "Image of grave"
-
-#~ msgid "Imagem do monumento no inverno, de preferência com neve"
-#~ msgstr "Image of the monument in winter, preferably with snow"
-
-#~ msgid "Imagem com campo de visão de 360 por 180 graus"
-#~ msgstr "Image with 360 by 180 degree field of view"
-
-#~ msgid "Imagem de um túmulo, lápide ou jazigo"
-#~ msgstr "Image of a tomb or tombstone"
-
-#~ msgid "Brasil"
-#~ msgstr "Brazil"
-
-#~ msgid "Saiba mais sobre este aplicativo"
-#~ msgstr "Learn more about this app"
-
-#~ msgid "WLM Brasil"
-#~ msgstr "WLM Brasil"
-
-#~ msgid "Logotipo"
-#~ msgstr "Logo"
-
-#~ msgid "Região Norte"
-#~ msgstr "North Region"
-
-#~ msgid "Acre"
-#~ msgstr "Acre"
-
-#~ msgid "Amapá"
-#~ msgstr "Amapá"
-
-#~ msgid "Amazonas"
-#~ msgstr "Amazonas"
-
-#~ msgid "Pará"
-#~ msgstr "Pará"
-
-#~ msgid "Rondônia"
-#~ msgstr "Rondônia"
-
-#~ msgid "Roraima"
-#~ msgstr "Roraima"
-
-#~ msgid "Tocantins"
-#~ msgstr "Tocantins"
-
-#~ msgid "Região Nordeste"
-#~ msgstr "Northeast Region"
-
-#~ msgid "Alagoas"
-#~ msgstr "Alagoas"
-
-#~ msgid "Bahia"
-#~ msgstr "Bahia"
-
-#~ msgid "Ceará"
-#~ msgstr "Ceará"
-
-#~ msgid "Maranhão"
-#~ msgstr "Maranhão"
-
-#~ msgid "Paraíba"
-#~ msgstr "Paraíba"
-
-#~ msgid "Pernambuco"
-#~ msgstr "Pernambuco"
-
-#~ msgid "Piauí"
-#~ msgstr "Piauí"
-
-#~ msgid "Rio Grande do Norte"
-#~ msgstr "Rio Grande do Norte"
-
-#~ msgid "Sergipe"
-#~ msgstr "Sergipe"
-
-#~ msgid "Região Centro-Oeste"
-#~ msgstr "Midwest Region"
-
-#~ msgid "Distrito Federal"
-#~ msgstr "Distrito Federal"
-
-#~ msgid "Goiás"
-#~ msgstr "Goiás"
-
-#~ msgid "Mato Grosso"
-#~ msgstr "Mato Grosso"
-
-#~ msgid "Mato Grosso do Sul"
-#~ msgstr "Mato Grosso do Sul"
-
-#~ msgid "Região Sudeste"
-#~ msgstr "Southeast"
-
-#~ msgid "Espírito Santo"
-#~ msgstr "Espírito Santo"
-
-#~ msgid "Minas Gerais"
-#~ msgstr "Minas Gerais"
-
-#~ msgid "Rio de Janeiro"
-#~ msgstr "Rio de Janeiro"
-
-#~ msgid "São Paulo"
-#~ msgstr "São Paulo"
-
-#~ msgid "Região Sul"
-#~ msgstr "South Region"
-
-#~ msgid "Rio Grande do Sul"
-#~ msgstr "Rio Grande do Sul"
-
-#~ msgid "Santa Catarina"
-#~ msgstr "Santa Catarina"
-
+msgstr "Language"

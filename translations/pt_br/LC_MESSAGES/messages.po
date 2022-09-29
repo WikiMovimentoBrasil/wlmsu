@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: eder.porto@wmnobrasil.org\n"
-"POT-Creation-Date: 2022-09-18 23:41-0300\n"
+"POT-Creation-Date: 2022-09-29 03:25-0300\n"
 "PO-Revision-Date: 2022-08-28 02:21-0300\n"
 "Last-Translator: Éder Porto Ferreira Alves <eder.porto@wmnobrasil.org>\n"
 "Language: pt_BR\n"
@@ -17,6 +17,135 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
+
+#: app.py:386
+msgid "Ver mais informações e enviar fotografias"
+msgstr ""
+
+#: app.py:447
+#, python-format
+msgid ""
+"Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com"
+" sucesso!"
+msgstr ""
+
+#: app.py:509
+msgid "Coordenadas inseridas com sucesso!"
+msgstr ""
+
+#: app.py:509
+msgid ""
+"Algo deu errado, atualize esta página e tente novamente. Caso o erro "
+"persista, entre em contato na seção \\\"Sobre\\\"."
+msgstr ""
+
+#: app.py:544 app.py:553
+msgid "Uma imagem com este exato título já existe. Por favor, reformule o título."
+msgstr ""
+
+#: app.py:546
+#, python-format
+msgid ""
+"Esta imagem é uma duplicata exata da imagem "
+"https://commons.wikimedia.org/wiki/File:%(file_)s"
+msgstr ""
+
+#: app.py:549
+msgid ""
+"Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da"
+" base."
+msgstr ""
+
+#: app.py:551
+msgid ""
+"Uma outra imagem costumava utilizar este mesmo título. Por favor, "
+"reformule o título."
+msgstr ""
+
+#: app.py:556 app.py:561
+msgid ""
+"Imagem enviada com sucesso! Verifique suas contribuições clicando em seu "
+"nome de usuário(a)."
+msgstr ""
+
+#: app.py:564
+msgid "Error."
+msgstr ""
+
+#: app.py:566
+msgid ""
+"Ocorreu algum erro! Verifique o formulário e tente novamente. Caso o erro"
+" persista, por favor, reporte em "
+"https://github.com/WikiMovimentoBrasil/wlmsu/issues"
+msgstr ""
+
+#: wikidata.py:326
+msgid "Sem imagens"
+msgstr ""
+
+#: wikidata.py:329
+msgid "Rótulo"
+msgstr ""
+
+#: wikidata.py:330
+msgid "Designação do patrimônio"
+msgstr ""
+
+#: wikidata.py:331
+msgid "Endereço"
+msgstr ""
+
+#: wikidata.py:332
+msgid "Latitude"
+msgstr ""
+
+#: wikidata.py:333
+msgid "Longitude"
+msgstr ""
+
+#: wikidata.py:334
+msgid "Imagem (P18)"
+msgstr ""
+
+#: wikidata.py:335
+msgid "Imagem da planta (P3311)"
+msgstr ""
+
+#: wikidata.py:336
+msgid "Visão panorâmica (P4291)"
+msgstr ""
+
+#: wikidata.py:337
+msgid "Vista (P8517)"
+msgstr ""
+
+#: wikidata.py:338
+msgid "Placa com o nome do lugar (P1766)"
+msgstr ""
+
+#: wikidata.py:339
+msgid "Imagem de placa comemorativa (P1801)"
+msgstr ""
+
+#: wikidata.py:340
+msgid "Imagem noturna (P3451)"
+msgstr ""
+
+#: wikidata.py:341
+msgid "Imagem do interior (P5775)"
+msgstr ""
+
+#: wikidata.py:342
+msgid "Vista aérea (P8592)"
+msgstr ""
+
+#: wikidata.py:343
+msgid "Imagem da entrada (P9721)"
+msgstr ""
+
+#: wikidata.py:344
+msgid "Imagem da inscrição (P9906)"
+msgstr ""
 
 #: templates/aboutmodal.html:5 templates/sobre.html:9
 #: templates/topnavbar.html:3
@@ -43,7 +172,7 @@ msgstr ""
 msgid "bheritagesur@gmail.com"
 msgstr ""
 
-#: templates/aboutmodal.html:16
+#: templates/aboutmodal.html:16 templates/presentationmodal.html:29
 #, python-format
 msgid ""
 "<i>Wiki Loves Suriname</i> é um aplicativo desenvolvido pelo "
@@ -634,13 +763,6 @@ msgstr ""
 msgid "Visite a página do concurso na Wiki"
 msgstr ""
 
-#: templates/presentationmodal.html:29
-#, python-format
-msgid ""
-"<i>Wiki Loves Suriname</i> é um aplicativo desenvolvido pelo "
-"<i><b>%(projeto)s</b></i>."
-msgstr ""
-
 #: templates/sobre.html:41
 msgid ""
 "Você está pronto(a) para participar do maior concurso fotográfico do "
@@ -774,274 +896,3 @@ msgstr ""
 #: templates/topnavbar.html:27
 msgid "Idioma"
 msgstr ""
-
-#~ msgid ""
-#~ "Você está pronto(a) para participar do"
-#~ " maior concurso fotográfico do mundo?! "
-#~ "O aplicativo <b>Wiki Loves Brasil</b> te"
-#~ " oferece diversas formas de participar: "
-#~ "Enviando suas fotografias dos monumentos "
-#~ "surinameses de maneira simplificada, "
-#~ "geolocalizando monumentos ainda sem "
-#~ "coordenadas registradas e sugerindo monumentos"
-#~ " que por acaso não estejam nas "
-#~ "listas."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "No ano de 2021, o Brasil foi "
-#~ "o vencedor da etapa internacional, com"
-#~ " a imagem <a target='_blank' "
-#~ "href='https://commons.wikimedia.org/wiki/File:Real_Gabinete_Português_de_Leitura_10.jpg'"
-#~ " title='Real Gabinete Português de Leitura,"
-#~ " por Donatas Dabravolskas'>Real Gabinete "
-#~ "Português de Leitura</a>, por Donatas "
-#~ "Dabravolskas."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Participe e concorra a prêmios. Mais "
-#~ "detalhes na <a target='_blank' "
-#~ "href='https://w.wiki/5Bkv' title='Wiki Loves "
-#~ "Monuments Brasil 2022'>página do concurso "
-#~ "na Wikipédia</a>."
-#~ msgstr ""
-
-#~ msgid "Logotipo Wiki Loves Monuments Brasil"
-#~ msgstr ""
-
-#~ msgid "Logotipo Wiki Loves Brasil"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "<i>Wiki Loves Brasil</i> é um aplicativo"
-#~ " desenvolvido pelo <i><b>%(projeto)s</b></i>, "
-#~ "visando melhorar a experiência dos "
-#~ "usuários que participam do concurso "
-#~ "fotográfico Wiki Loves Monuments na "
-#~ "localização e envio de fotografias para"
-#~ " o Wikimedia Commons."
-#~ msgstr ""
-
-#~ msgid "Bem-vindo(a/e) ao<br><i>Wiki Loves Monuments Brasil 2022</i>"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Neste aplicativo, você envia suas "
-#~ "fotografias do patrimônio histórico brasileiro"
-#~ " e participa do maior concurso "
-#~ "fotográfico do mundo!"
-#~ msgstr ""
-
-#~ msgid "para participar do Wiki Loves Monuments Brasil."
-#~ msgstr ""
-
-#~ msgid "Imagem do exterior"
-#~ msgstr ""
-
-#~ msgid "Imagem do interior"
-#~ msgstr ""
-
-#~ msgid "Imagem da entrada"
-#~ msgstr ""
-
-#~ msgid "Imagem da inscrição"
-#~ msgstr ""
-
-#~ msgid "Vista noturna"
-#~ msgstr ""
-
-#~ msgid "Placa comemorativa"
-#~ msgstr ""
-
-#~ msgid "Placa com o nome do lugar"
-#~ msgstr ""
-
-#~ msgid "Vista"
-#~ msgstr ""
-
-#~ msgid "Vista panorâmica"
-#~ msgstr ""
-
-#~ msgid "Vista no inverno"
-#~ msgstr ""
-
-#~ msgid "Fotoesfera"
-#~ msgstr ""
-
-#~ msgid "Imagem da planta"
-#~ msgstr ""
-
-#~ msgid "Imagem do túmulo"
-#~ msgstr ""
-
-#~ msgid "Imagem do monumento no inverno, de preferência com neve"
-#~ msgstr ""
-
-#~ msgid "Imagem com campo de visão de 360 por 180 graus"
-#~ msgstr ""
-
-#~ msgid "Imagem de um túmulo, lápide ou jazigo"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Ocorreu algum erro! Verifique que fez"
-#~ " login e revise o formulário. Caso"
-#~ " o erro persista, por favor, reporte"
-#~ " em https://github.com/WikiMovimentoBrasil/wlmsu/issues"
-#~ msgstr ""
-
-#~ msgid "Brasil"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "O <b>Wiki Loves Brasil</b> é um "
-#~ "aplicativo de envio de imagens para "
-#~ "a etapa nacional do maior concurso "
-#~ "fotográfico do mundo, o <b><i>Wiki Loves"
-#~ " Monuments</i></b>!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Envie suas fotografias do patrimônio "
-#~ "histórico brasileiro durante o mês de"
-#~ " setembro para participar e concorrer "
-#~ "a prêmios."
-#~ msgstr ""
-
-#~ msgid "https://pt.wikipedia.org/wiki/Wikipédia:Wiki_Loves_Monuments/Brasil"
-#~ msgstr ""
-
-#~ msgid "Saiba mais sobre este aplicativo"
-#~ msgstr ""
-
-#~ msgid "WLM Brasil"
-#~ msgstr ""
-
-#~ msgid "Logotipo"
-#~ msgstr ""
-
-#~ msgid "Filtre os monumentos"
-#~ msgstr ""
-
-#~ msgid "Selecione os monumentos"
-#~ msgstr ""
-
-#~ msgid "Adicione coordenadas a monumentos"
-#~ msgstr ""
-
-#~ msgid "Sugira monumentos para o mapa"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Utilize o formulário abaixo para sugerir"
-#~ " monumentos que não estejam nos mapas"
-#~ " ou nas\n"
-#~ "                listas do Wiki Loves Monuments Brasil."
-#~ msgstr ""
-
-#~ msgid "Em qual estado está localizado? <sup style=\"color:#990000\">*</sup>"
-#~ msgstr ""
-
-#~ msgid "Região Norte"
-#~ msgstr ""
-
-#~ msgid "Acre"
-#~ msgstr ""
-
-#~ msgid "Amapá"
-#~ msgstr ""
-
-#~ msgid "Amazonas"
-#~ msgstr ""
-
-#~ msgid "Pará"
-#~ msgstr ""
-
-#~ msgid "Rondônia"
-#~ msgstr ""
-
-#~ msgid "Roraima"
-#~ msgstr ""
-
-#~ msgid "Tocantins"
-#~ msgstr ""
-
-#~ msgid "Região Nordeste"
-#~ msgstr ""
-
-#~ msgid "Alagoas"
-#~ msgstr ""
-
-#~ msgid "Bahia"
-#~ msgstr ""
-
-#~ msgid "Ceará"
-#~ msgstr ""
-
-#~ msgid "Maranhão"
-#~ msgstr ""
-
-#~ msgid "Paraíba"
-#~ msgstr ""
-
-#~ msgid "Pernambuco"
-#~ msgstr ""
-
-#~ msgid "Piauí"
-#~ msgstr ""
-
-#~ msgid "Rio Grande do Norte"
-#~ msgstr ""
-
-#~ msgid "Sergipe"
-#~ msgstr ""
-
-#~ msgid "Região Centro-Oeste"
-#~ msgstr ""
-
-#~ msgid "Distrito Federal"
-#~ msgstr ""
-
-#~ msgid "Goiás"
-#~ msgstr ""
-
-#~ msgid "Mato Grosso"
-#~ msgstr ""
-
-#~ msgid "Mato Grosso do Sul"
-#~ msgstr ""
-
-#~ msgid "Região Sudeste"
-#~ msgstr ""
-
-#~ msgid "Espírito Santo"
-#~ msgstr ""
-
-#~ msgid "Minas Gerais"
-#~ msgstr ""
-
-#~ msgid "Rio de Janeiro"
-#~ msgstr ""
-
-#~ msgid "São Paulo"
-#~ msgstr ""
-
-#~ msgid "Região Sul"
-#~ msgstr ""
-
-#~ msgid "Paraná"
-#~ msgstr ""
-
-#~ msgid "Rio Grande do Sul"
-#~ msgstr ""
-
-#~ msgid "Santa Catarina"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Você possui um link para referência "
-#~ "sobre o monumento? Se sim, cole-o "
-#~ "abaixo: <sup style=\"color:#990000\">*</sup>"
-#~ msgstr ""
-

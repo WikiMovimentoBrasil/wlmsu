@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-09-18 23:41-0300\n"
+"POT-Creation-Date: 2022-09-29 03:25-0300\n"
 "PO-Revision-Date: 2022-08-30 05:03-0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: nl\n"
@@ -17,6 +17,152 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
+
+#: app.py:386
+msgid "Ver mais informações e enviar fotografias"
+msgstr "Bekijk meer informatie en stuur foto's"
+
+#: app.py:447
+#, python-format
+msgid ""
+"Sua sugestão para adicionar %(val)s à lista de monumentos foi enviada com"
+" sucesso!"
+msgstr "Uw suggestie om %(val)s toe te voegen aan de monumentenlijst is "
+"succesvol verzonden!"
+
+#: app.py:509
+msgid "Coordenadas inseridas com sucesso!"
+msgstr "Coördinaten succesvol ingevoerd!"
+
+#: app.py:509
+msgid ""
+"Algo deu errado, atualize esta página e tente novamente. Caso o erro "
+"persista, entre em contato na seção \\\"Sobre\\\"."
+msgstr "Er is iets misgegaan, ververs deze pagina en probeer het opnieuw. Als de fout "
+"aanhouden, neem contact met ons op in de \\\"Over\\\" sectie."
+
+#: app.py:544 app.py:553
+msgid "Uma imagem com este exato título já existe. Por favor, reformule o título."
+msgstr "Er bestaat al een afbeelding met deze exacte titel. Gelieve de titel te herformuleren."
+
+#: app.py:546
+#, python-format
+msgid ""
+"Esta imagem é uma duplicata exata da imagem "
+"https://commons.wikimedia.org/wiki/File:%(file_)s"
+msgstr "Deze afbeelding is een exacte kopie van de afbeelding "
+"https://commons.wikimedia.org/wiki/File:%(file_)s"
+
+#: app.py:549
+msgid ""
+"Esta imagem é uma duplicata exata de uma outra imagem que foi deletada da"
+" base."
+msgstr "Deze afbeelding is een exacte kopie van een andere afbeelding die is verwijderd uit"
+" basis."
+
+#: app.py:551
+msgid ""
+"Uma outra imagem costumava utilizar este mesmo título. Por favor, "
+"reformule o título."
+msgstr "Een andere afbeelding gebruikte dezelfde titel. Alstublieft, "
+"herschrijf de titel."
+
+#: app.py:556 app.py:561
+msgid ""
+"Imagem enviada com sucesso! Verifique suas contribuições clicando em seu "
+"nome de usuário(a)."
+msgstr "Afbeelding succesvol verzonden! Controleer uw bijdragen door op uw "
+"gebruikersnaam te klikken."
+
+#: app.py:564
+#, fuzzy
+msgid "Error."
+msgstr "Fout"
+
+#: app.py:566
+#, fuzzy
+msgid ""
+"Ocorreu algum erro! Verifique o formulário e tente novamente. Caso o erro"
+" persista, por favor, reporte em "
+"https://github.com/WikiMovimentoBrasil/wlmsu/issues"
+msgstr ""
+"Er ging iets mis! Controleer of je bent ingelogd en controleer je invoer"
+"  Als het zich blijft voordoen, geef het door aan ons "
+"https://github.com/WikiMovimentoBrasil/wikilovessuriname/issues"
+
+#: wikidata.py:326
+#, fuzzy
+msgid "Sem imagens"
+msgstr "Soorten afbeeldingen"
+
+#: wikidata.py:329
+msgid "Rótulo"
+msgstr "Label"
+
+#: wikidata.py:330
+msgid "Designação do patrimônio"
+msgstr "Aanduiding van activa"
+
+#: wikidata.py:331
+#, fuzzy
+msgid "Endereço"
+msgstr "Vul het adres in"
+
+#: wikidata.py:332
+msgid "Latitude"
+msgstr "Breedtegraad"
+
+#: wikidata.py:333
+msgid "Longitude"
+msgstr "Lengtegraad"
+
+#: wikidata.py:334
+msgid "Imagem (P18)"
+msgstr "Afbeelding (P18)"
+
+#: wikidata.py:335
+msgid "Imagem da planta (P3311)"
+msgstr "Plantbeeld (P3311)"
+
+#: wikidata.py:336
+msgid "Visão panorâmica (P4291)"
+msgstr "Panoramisch zicht (P4291)"
+
+#: wikidata.py:337
+msgid "Vista (P8517)"
+msgstr "Bekijken (P8517)"
+
+#: wikidata.py:338
+msgid "Placa com o nome do lugar (P1766)"
+msgstr "Plaats naamplaatje (P1766)"
+
+#: wikidata.py:339
+msgid "Imagem de placa comemorativa (P1801)"
+msgstr "Gedenkplaat afbeelding (P1801)"
+
+#: wikidata.py:340
+msgid "Imagem noturna (P3451)"
+msgstr "Nachtbeeld (P3451)"
+
+#: wikidata.py:341
+#, fuzzy
+msgid "Imagem do interior (P5775)"
+msgstr "Foto van het interieur"
+
+#: wikidata.py:342
+#, fuzzy
+msgid "Vista aérea (P8592)"
+msgstr "Luchtfoto"
+
+#: wikidata.py:343
+#, fuzzy
+msgid "Imagem da entrada (P9721)"
+msgstr "Ingangszicht van buitenaf"
+
+#: wikidata.py:344
+#, fuzzy
+msgid "Imagem da inscrição (P9906)"
+msgstr "Foto van inscriptie"
 
 #: templates/aboutmodal.html:5 templates/sobre.html:9
 #: templates/topnavbar.html:3
@@ -43,14 +189,14 @@ msgstr "info.sges1997@gmail.com"
 msgid "bheritagesur@gmail.com"
 msgstr "bheritagesur@gmail.com"
 
-#: templates/aboutmodal.html:16
+#: templates/aboutmodal.html:16 templates/presentationmodal.html:29
 #, python-format
 msgid ""
 "<i>Wiki Loves Suriname</i> é um aplicativo desenvolvido pelo "
 "<i><b>%(projeto)s</b></i>."
 msgstr ""
-"<i>Wiki Loves Suriname</i> is een applicatie ontwikkeld door "
-"de <i><b>%(projeto)s</b></i>."
+"<i>Wiki Loves Suriname</i> is een applicatie ontwikkeld door de "
+"<i><b>%(projeto)s</b></i>."
 
 #: templates/aboutmodal.html:17 templates/presentationmodal.html:30
 #, python-format
@@ -99,8 +245,8 @@ msgid ""
 "Este aplicativo é inspirado no %(reference)s, desenvolvido por Paweł "
 "Marynowski e Stephen LaPorte"
 msgstr ""
-"Deze app is gebaseerd op %(reference)s, ontwikkeld door Paweł "
-"Marynowski en Stephen LaPorte"
+"Deze app is gebaseerd op %(reference)s, ontwikkeld door Paweł Marynowski "
+"en Stephen LaPorte"
 
 #: templates/aboutmodal.html:31 templates/sobre.html:57
 #, python-format
@@ -228,8 +374,9 @@ msgid ""
 "                        fa-map-pin\"></i> e posicionando o marcador no "
 "mapa ou manualmente no campo abaixo."
 msgstr ""
-"Om coördinaten toe te voegen, klik je op de <i class=\"fa-solid fa-map-pin\"></i> "
-"en zet je de marker op de kaart of handmatig in het veld hieronder."
+"Om coördinaten toe te voegen, klik je op de <i class=\"fa-solid fa-map-"
+"pin\"></i> en zet je de marker op de kaart of handmatig in het veld "
+"hieronder."
 
 #: templates/geolocate.html:110
 msgid "Coordenadas"
@@ -314,7 +461,9 @@ msgstr "Foto van het interieur"
 
 #: templates/item.html:157
 msgid "Vista da entrada de um edifício ou espaço fechado, vista do lado"
-msgstr "Gezicht op de ingang van het gebouw of omheinde ruimte, gezien van de voorkant"
+msgstr ""
+"Gezicht op de ingang van het gebouw of omheinde ruimte, gezien van de "
+"voorkant"
 
 #: templates/item.html:159
 msgid "Imagem da entrada vista de fora "
@@ -438,7 +587,9 @@ msgstr "Selecteer de soort foto (optioneel)"
 
 #: templates/item.html:376 templates/map_uf.html:57
 msgid "Vista da entrada de um edifício ou espaço fechado, vista do lado de fora"
-msgstr "Gezicht op de ingang van het gebouw of omheinde ruimte, gezien van de voorkant"
+msgstr ""
+"Gezicht op de ingang van het gebouw of omheinde ruimte, gezien van de "
+"voorkant"
 
 #: templates/item.html:376 templates/map_uf.html:57
 msgid "Imagem da entrada vista de fora"
@@ -459,13 +610,13 @@ msgid ""
 "esta imagem, contanto que me creditem e compartilhem qualquer obra "
 "derivada sob esta mesma licença."
 msgstr ""
-"Ik, %(username)s, de auteursrechthebbende van deze foto, geef "
-"hierbij iedereen het <b>onherroepelijke</b> recht dit werk te gebruiken onder de  <a "
-"target='_blank ' href='https://creativecommons.org/licenses/by-"
-"sa/4.0/deed.pt_BR'>Creative Commons-licentie Naamsvermelding-Gelijk delen 4.0 "
-"license</a>. Iedereen mag dit werk gebruiken, delen en remixen, "
-"onder vermelding van mijn naam en mits alle afgeleide werken onder "
-"deze licentie gedeeld worden."
+"Ik, %(username)s, de auteursrechthebbende van deze foto, geef hierbij "
+"iedereen het <b>onherroepelijke</b> recht dit werk te gebruiken onder de"
+"  <a target='_blank ' href='https://creativecommons.org/licenses/by-"
+"sa/4.0/deed.pt_BR'>Creative Commons-licentie Naamsvermelding-Gelijk delen"
+" 4.0 license</a>. Iedereen mag dit werk gebruiken, delen en remixen, "
+"onder vermelding van mijn naam en mits alle afgeleide werken onder deze "
+"licentie gedeeld worden."
 
 #: templates/item.html:557
 msgid "Enviar imagem(ns)"
@@ -477,8 +628,8 @@ msgid ""
 " erro persista, por favor, reporte em "
 "https://github.com/WikiMovimentoBrasil/wikilovessuriname/issues"
 msgstr ""
-"Er ging iets mis! Controleer of je bent ingelogd en controleer je invoer "
-" Als het zich blijft voordoen, geef het door aan ons "
+"Er ging iets mis! Controleer of je bent ingelogd en controleer je invoer"
+"  Als het zich blijft voordoen, geef het door aan ons "
 "https://github.com/WikiMovimentoBrasil/wikilovessuriname/issues"
 
 #: templates/item.html:600
@@ -627,9 +778,9 @@ msgid ""
 "imagens para a etapa nacional do maior concurso fotográfico do mundo, o "
 "<b><i>Wiki Loves Monuments</i></b>!"
 msgstr ""
-"De <b>Loves Monuments Suriname Wiki</b> is een aanvraag voor het "
-"indienen van afbeeldingen voor het nationale podium van de "
-"grootste fotowedstrijd ter wereld, de <b><i>Loves Monuments Wiki</i></b>!"
+"De <b>Loves Monuments Suriname Wiki</b> is een aanvraag voor het indienen"
+" van afbeeldingen voor het nationale podium van de grootste fotowedstrijd"
+" ter wereld, de <b><i>Loves Monuments Wiki</i></b>!"
 
 #: templates/presentationmodal.html:13
 msgid ""
@@ -659,15 +810,6 @@ msgstr "https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2022_in_
 msgid "Visite a página do concurso na Wiki"
 msgstr "Bezoek de wedstrijdpagina op de Wiki"
 
-#: templates/presentationmodal.html:29
-#, python-format
-msgid ""
-"<i>Wiki Loves Suriname</i> é um aplicativo desenvolvido pelo "
-"<i><b>%(projeto)s</b></i>."
-msgstr ""
-"<i>Wiki Loves Suriname</i> is een app ontwikkeld door "
-"<i><b>%(projeto)s</b></i>."
-
 #: templates/sobre.html:41
 msgid ""
 "Você está pronto(a) para participar do maior concurso fotográfico do "
@@ -677,19 +819,19 @@ msgid ""
 "coordenadas registradas e sugerindo monumentos que por acaso não estejam "
 "nas listas."
 msgstr ""
-"Klaar om deel te nemen aan de grootste fotowedstrijd ter wereld?"
-"Met <b>Wiki Loves Suriname</b> app doe je op verschillende manieren mee: "
-"Voeg eenvoudig jouw foto's van Surinaamse monumenten toe, "
-"Voeg geolocaties toe aan monumenten die dat nog niet hebben en doe"
-"Suggesties voor monumenten die niet op de werklijsten staan."
+"Klaar om deel te nemen aan de grootste fotowedstrijd ter wereld?Met "
+"<b>Wiki Loves Suriname</b> app doe je op verschillende manieren mee: Voeg"
+" eenvoudig jouw foto's van Surinaamse monumenten toe, Voeg geolocaties "
+"toe aan monumenten die dat nog niet hebben en doeSuggesties voor "
+"monumenten die niet op de werklijsten staan."
 
 #: templates/sobre.html:42
 msgid ""
 "O Wiki Loves Monuments é o maior concurso fotográfico do mundo! A etapa "
 "nacional ocorre entre 1º e 30 de setembro de 2022."
 msgstr ""
-"Wiki Loves Monuments is de grootste fotowedstrijd te wereld! De nationale "
-"editie is van 1 tot 30 september 2022."
+"Wiki Loves Monuments is de grootste fotowedstrijd te wereld! De nationale"
+" editie is van 1 tot 30 september 2022."
 
 #: templates/sobre.html:43
 msgid ""
@@ -698,13 +840,12 @@ msgid ""
 "2022'>página do concurso no Wikimedia Commons</a>."
 msgstr ""
 "Doe mee en win een prijs. Meer details vind je op <a target='_blank' "
-"href='https://www.wikilovesmonuments.sr' title='Wiki Loves Monuments Suriname "
-"2022'>wedstrijdpagina</a>."
+"href='https://www.wikilovesmonuments.sr' title='Wiki Loves Monuments "
+"Suriname 2022'>wedstrijdpagina</a>."
 
 #: templates/suggest.html:17
 msgid "Sugira monumentos"
 msgstr "Suggereren monumenten"
-
 
 #: templates/suggest.html:44
 msgid ""
@@ -712,8 +853,8 @@ msgid ""
 "mapas ou nas\n"
 "                listas do Wiki Loves Monuments Suriname."
 msgstr ""
-"Gebruik het formulier hieronder om monumenten die nog niet op de "
-"lijst of kaart van Wiki Loves Monuments Suriname staan door te geven"
+"Gebruik het formulier hieronder om monumenten die nog niet op de lijst of"
+" kaart van Wiki Loves Monuments Suriname staan door te geven"
 
 #: templates/suggest.html:49
 msgid "Qual o nome do monumento? <sup style=\"color:#990000\">*</sup>"
@@ -775,9 +916,7 @@ msgstr "Wanica"
 msgid ""
 "Em qual(is) município(s) está localizado? <sup "
 "style=\"color:#990000\">*</sup>"
-msgstr ""
-"In welk district ligt het? <sup "
-"style=\"color:#990000\">*</sup>"
+msgstr "In welk district ligt het? <sup style=\"color:#990000\">*</sup>"
 
 #: templates/suggest.html:74
 msgid "Digite o nome do município"
@@ -818,3 +957,4 @@ msgstr "Algemene kaart"
 #: templates/topnavbar.html:27
 msgid "Idioma"
 msgstr "Taal"
+
