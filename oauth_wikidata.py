@@ -167,7 +167,7 @@ def build_text(form):
     result = query_wikidata("SELECT DISTINCT ?item ?itemDescription ?name ?local ?localLabel "
                             "?local_cat ?estado ?estadoLabel (LANG(?itemDescription) AS ?lang) "
                             "WHERE { "
-                            "BIND(wd:Q113617275 AS ?item) "
+                            "BIND(wd:"+qid+" AS ?item) "
                             "OPTIONAL { [] schema:about ?item; "
                             "schema:isPartOf <https://commons.wikimedia.org/>; "
                             "schema:name ?name. } "
